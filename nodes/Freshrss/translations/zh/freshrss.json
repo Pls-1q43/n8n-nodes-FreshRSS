@@ -2,9 +2,22 @@
 	"freshrss": {
 		"nodeView": {
 			"displayName": "FreshRSS",
-			"description": "通过灵活的筛选条件从 FreshRSS 获取文章"
+			"description": "从 FreshRSS 获取文章或更新文章状态"
 		},
 		"properties": {
+			"operation": {
+				"displayName": "操作",
+				"options": {
+					"getArticles": {
+						"name": "获取文章",
+						"description": "通过灵活的筛选条件从 FreshRSS 获取文章"
+					},
+					"updateArticle": {
+						"name": "更新文章",
+						"description": "更新文章状态（已读、加星、标签等）"
+					}
+				}
+			},
 			"filterMode": {
 				"displayName": "筛选模式",
 				"options": {
@@ -113,6 +126,80 @@
 						"description": "最旧的文章排在前面"
 					}
 				}
+			},
+			"updateAction": {
+				"displayName": "更新动作",
+				"options": {
+					"markAsRead": {
+						"name": "标记为已读",
+						"description": "将文章标记为已读"
+					},
+					"markAsUnread": {
+						"name": "标记为未读",
+						"description": "将文章标记为未读"
+					},
+					"star": {
+						"name": "加星",
+						"description": "为文章添加星标"
+					},
+					"unstar": {
+						"name": "取消加星",
+						"description": "移除文章的星标"
+					},
+					"addTag": {
+						"name": "添加标签",
+						"description": "为文章添加自定义标签"
+					},
+					"removeTag": {
+						"name": "移除标签",
+						"description": "移除文章的自定义标签"
+					},
+					"markAllAsRead": {
+						"name": "全部标记为已读",
+						"description": "将订阅源或分类下的所有文章标记为已读"
+					}
+				}
+			},
+			"articleIds": {
+				"displayName": "文章 ID",
+				"description": "要更新的文章 ID，支持逗号分隔多个 ID"
+			},
+			"tagName": {
+				"displayName": "标签名称",
+				"description": "要添加的标签名称。如果标签不存在，将自动创建"
+			},
+			"removeTagId": {
+				"displayName": "标签",
+				"description": "要从文章中移除的标签"
+			},
+			"markAllAsReadScope": {
+				"displayName": "范围",
+				"options": {
+					"all": {
+						"name": "全部",
+						"description": "标记所有文章为已读"
+					},
+					"category": {
+						"name": "分类",
+						"description": "标记指定分类下的所有文章为已读"
+					},
+					"feed": {
+						"name": "订阅源",
+						"description": "标记指定订阅源下的所有文章为已读"
+					}
+				}
+			},
+			"markAllFeed": {
+				"displayName": "订阅源",
+				"description": "要标记为已读的订阅源"
+			},
+			"markAllCategory": {
+				"displayName": "分类",
+				"description": "要标记为已读的分类"
+			},
+			"markAllTimestamp": {
+				"displayName": "截止时间",
+				"description": "仅标记此时间之前的文章为已读。留空则标记全部"
 			}
 		}
 	}
