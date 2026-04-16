@@ -260,7 +260,9 @@ export async function getCategories(
 			{ output: 'json' },
 		)) as ITagListResponse;
 
-		const categories: INodePropertyOptions[] = [];
+		const categories: INodePropertyOptions[] = [
+			{ name: 'All', value: '' },
+		];
 		if (response.tags) {
 			for (const tag of response.tags) {
 				// 分类的 ID 格式为 user/-/label/CategoryName
@@ -294,7 +296,9 @@ export async function getFeeds(
 			{ output: 'json' },
 		)) as ISubscriptionListResponse;
 
-		const feeds: INodePropertyOptions[] = [];
+		const feeds: INodePropertyOptions[] = [
+			{ name: 'All', value: '' },
+		];
 		if (response.subscriptions) {
 			for (const sub of response.subscriptions) {
 				const categoryLabel = sub.categories?.length > 0
@@ -327,7 +331,9 @@ export async function getTags(
 			{ output: 'json' },
 		)) as ITagListResponse;
 
-		const tags: INodePropertyOptions[] = [];
+		const tags: INodePropertyOptions[] = [
+			{ name: 'All', value: '' },
+		];
 		if (response.tags) {
 			for (const tag of response.tags) {
 				// 排除系统状态标签（com.google/...），只保留用户标签

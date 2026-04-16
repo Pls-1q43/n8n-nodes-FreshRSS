@@ -20,15 +20,15 @@
 			},
 			"category": {
 				"displayName": "分类",
-				"description": "按分类筛选文章"
+				"description": "按分类筛选文章。选择「全部」可获取所有分类的文章"
 			},
 			"feed": {
 				"displayName": "订阅源",
-				"description": "按订阅源筛选文章"
+				"description": "按订阅源筛选文章。选择「全部」可获取所有订阅源的文章"
 			},
 			"tag": {
 				"displayName": "标签",
-				"description": "按自定义标签筛选文章"
+				"description": "按自定义标签筛选文章。选择「全部」可获取不限标签的文章"
 			},
 			"status": {
 				"displayName": "状态",

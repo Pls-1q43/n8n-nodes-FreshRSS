@@ -86,7 +86,9 @@ export function buildSimpleFilterParams(params: {
 	}
 
 	// 构建 endpoint：stream/contents/{streamId}
-	const encodedStreamId = encodeURIComponent(streamId);
+	// 注意：streamId 中的 / 是路径分隔符，不能被编码
+	// 只对每个路径段单独编码，保留 / 不变
+	const encodedStreamId = streamId.split('/').map(encodeURIComponent).join('/');
 	const endpoint = `reader/api/0/stream/contents/${encodedStreamId}`;
 
 	return { endpoint, query };

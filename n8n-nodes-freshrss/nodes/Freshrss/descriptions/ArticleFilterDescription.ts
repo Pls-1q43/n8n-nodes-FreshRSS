@@ -35,7 +35,7 @@ const categoryProperty: INodeProperties = {
 		loadOptionsMethod: 'getCategories',
 	},
 	default: '',
-	description: 'Filter articles by category. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+	description: 'Filter articles by category. Select "All" to get articles from all categories. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 	displayOptions: {
 		show: {
 			filterMode: ['simple'],
@@ -52,7 +52,7 @@ const feedProperty: INodeProperties = {
 		loadOptionsMethod: 'getFeeds',
 	},
 	default: '',
-	description: 'Filter articles by feed subscription. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+	description: 'Filter articles by feed subscription. Select "All" to get articles from all feeds. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 	displayOptions: {
 		show: {
 			filterMode: ['simple'],
@@ -69,7 +69,7 @@ const tagProperty: INodeProperties = {
 		loadOptionsMethod: 'getTags',
 	},
 	default: '',
-	description: 'Filter articles by custom tag. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+	description: 'Filter articles by custom tag. Select "All" to get articles regardless of tags. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 	displayOptions: {
 		show: {
 			filterMode: ['simple'],
