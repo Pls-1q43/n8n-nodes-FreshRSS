@@ -1,0 +1,119 @@
+{
+	"freshrss": {
+		"nodeView": {
+			"displayName": "FreshRSS",
+			"description": "通过灵活的筛选条件从 FreshRSS 获取文章"
+		},
+		"properties": {
+			"filterMode": {
+				"displayName": "筛选模式",
+				"options": {
+					"simple": {
+						"name": "简单模式",
+						"description": "使用单一条件进行筛选"
+					},
+					"combined": {
+						"name": "组合模式",
+						"description": "使用 AND/OR 逻辑组合多个筛选条件"
+					}
+				}
+			},
+			"category": {
+				"displayName": "分类",
+				"description": "按分类筛选文章"
+			},
+			"feed": {
+				"displayName": "订阅源",
+				"description": "按订阅源筛选文章"
+			},
+			"tag": {
+				"displayName": "标签",
+				"description": "按自定义标签筛选文章"
+			},
+			"status": {
+				"displayName": "状态",
+				"options": {
+					"all": {
+						"name": "全部",
+						"description": "所有文章，不限状态"
+					},
+					"unread": {
+						"name": "未读",
+						"description": "仅未读文章"
+					},
+					"read": {
+						"name": "已读",
+						"description": "仅已读文章"
+					},
+					"starred": {
+						"name": "已加星",
+						"description": "仅已加星文章"
+					}
+				}
+			},
+			"startTime": {
+				"displayName": "起始时间",
+				"description": "仅返回此时间之后发布的文章"
+			},
+			"endTime": {
+				"displayName": "结束时间",
+				"description": "仅返回此时间之前发布的文章"
+			},
+			"combinationMode": {
+				"displayName": "组合方式",
+				"options": {
+					"and": {
+						"name": "AND（且）",
+						"description": "文章必须满足所有条件"
+					},
+					"or": {
+						"name": "OR（或）",
+						"description": "文章满足任一条件即可"
+					}
+				}
+			},
+			"filterConditions": {
+				"displayName": "筛选条件",
+				"description": "定义多个筛选条件",
+				"options": {
+					"conditions": {
+						"displayName": "条件",
+						"values": {
+							"filterType": {
+								"displayName": "筛选类型",
+								"options": {
+									"category": { "name": "分类" },
+									"feed": { "name": "订阅源" },
+									"tag": { "name": "标签" },
+									"status": { "name": "状态" },
+									"timeRange": { "name": "时间范围" }
+								}
+							}
+						}
+					}
+				}
+			},
+			"returnAll": {
+				"displayName": "返回全部",
+				"description": "是否返回所有结果，还是仅返回指定数量"
+			},
+			"limit": {
+				"displayName": "数量限制",
+				"description": "最多返回的文章数量"
+			},
+			"sortOrder": {
+				"displayName": "排序方式",
+				"options": {
+					"newest": {
+						"name": "最新优先",
+						"description": "最新的文章排在前面（默认）"
+					},
+					"oldest": {
+						"name": "最旧优先",
+						"description": "最旧的文章排在前面"
+					}
+				}
+			}
+		}
+	}
+}

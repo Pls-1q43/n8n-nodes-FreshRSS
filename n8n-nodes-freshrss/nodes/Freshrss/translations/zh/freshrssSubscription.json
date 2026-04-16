@@ -1,0 +1,85 @@
+{
+	"freshrssSubscription": {
+		"nodeView": {
+			"displayName": "FreshRSS 订阅管理",
+			"description": "管理 FreshRSS 订阅源"
+		},
+		"properties": {
+			"operation": {
+				"displayName": "操作",
+				"options": {
+					"getSubscriptions": {
+						"name": "获取订阅列表",
+						"description": "获取所有订阅源",
+						"action": "获取所有订阅源"
+					},
+					"addSubscription": {
+						"name": "添加订阅",
+						"description": "订阅新的 RSS 源",
+						"action": "订阅新的 RSS 源"
+					},
+					"unsubscribe": {
+						"name": "取消订阅",
+						"description": "取消订阅某个 RSS 源",
+						"action": "取消订阅某个 RSS 源"
+					},
+					"moveToCategory": {
+						"name": "移动到分类",
+						"description": "将订阅移动到其他分类",
+						"action": "将订阅移动到其他分类"
+					},
+					"getUnreadCount": {
+						"name": "获取未读计数",
+						"description": "获取所有订阅源和分类的未读文章数量",
+						"action": "获取未读文章数量"
+					},
+					"exportOpml": {
+						"name": "导出 OPML",
+						"description": "将订阅导出为 OPML 文件",
+						"action": "将订阅导出为 OPML"
+					},
+					"importOpml": {
+						"name": "导入 OPML",
+						"description": "从 OPML 文件导入订阅",
+						"action": "从 OPML 导入订阅"
+					}
+				}
+			},
+			"feedUrl": {
+				"displayName": "订阅源 URL",
+				"description": "要订阅的 RSS/Atom 源的 URL",
+				"placeholder": "https://example.com/feed.xml"
+			},
+			"category": {
+				"displayName": "分类",
+				"description": "将订阅添加到的分类（可选）。从列表中选择或输入新的分类名称。"
+			},
+			"newCategoryName": {
+				"displayName": "新分类名称",
+				"description": "如果不从现有分类中选择，请输入新的分类名称",
+				"placeholder": "我的新分类"
+			},
+			"feedToUnsubscribe": {
+				"displayName": "订阅源",
+				"description": "要取消订阅的 RSS 源"
+			},
+			"feedToMove": {
+				"displayName": "订阅源",
+				"description": "要移动的订阅源"
+			},
+			"targetCategory": {
+				"displayName": "目标分类",
+				"description": "要移动到的目标分类。从列表中选择或输入新的分类名称。"
+			},
+			"newTargetCategoryName": {
+				"displayName": "新分类名称",
+				"description": "如果不从现有分类中选择，请输入新的分类名称",
+				"placeholder": "我的新分类"
+			},
+			"binaryPropertyName": {
+				"displayName": "二进制属性名",
+				"description": "包含要导入的 OPML 文件的二进制属性名称"
+			}
+		}
+	}
+}

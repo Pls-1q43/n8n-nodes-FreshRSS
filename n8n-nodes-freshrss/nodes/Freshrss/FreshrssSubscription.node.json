@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-freshrss.freshrssSubscription",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication", "Productivity"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://freshrss.github.io/FreshRSS/en/developers/06_GoogleReader_API.html"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://freshrss.github.io/FreshRSS/en/developers/06_GoogleReader_API.html"
+			}
+		]
+	}
+}
